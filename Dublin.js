@@ -5,16 +5,16 @@ import * as React from 'react';
 
 export default function App({navigation}) {
   return (
-    <View>
+    <View style={styles.container}>
+    
       <Image
       style={styles.tinyLogo}
       source={{uri:'https://blueskyeducation.co.in/wp-content/uploads/2022/02/blue-sky-logo.jpg'}}
       />
-      <Grid>
-        
-        <Col size={50}>
+      <Grid style={styles.box}>
+      <Col size={50}>
           <Row style={styles.cell}>
-            <Text>Course</Text>
+            <Text style={styles.heading}>Course</Text>
           </Row>
           <Row style={styles.cell}>
             <Text>MA in Childrens and Young Adult Literature</Text>
@@ -52,9 +52,7 @@ export default function App({navigation}) {
           <Row style={styles.cell}>
             <Text>Msc in Electronic and Computer Technology</Text>
           </Row>
-          <Row style={styles.cell}>
-            <Text>MA in Childrens and Young Adult Literature</Text>
-          </Row>
+
           <Row style={styles.cell}>
             <Text>Msc in Electronic and Computer Technology</Text>
           </Row>
@@ -76,9 +74,15 @@ export default function App({navigation}) {
           <Row style={styles.cell}>
             <Text>BSc in Computer science </Text>
           </Row>
+          <Row style={styles.cell}>
+            <Text>MA in Childrens and Young Adult Literature</Text>
+          </Row>
+          <Row style={styles.cell}>
+            <Text>Msc in Electronic and Computer Technology</Text>
+          </Row>
+          </Col>
+
           
-          
-        </Col>
         <Col size={25}>
           <Row style={styles.cell}>
             <Text>Intake</Text>
@@ -284,78 +288,11 @@ export default function App({navigation}) {
           <Row style={styles.cell}>
             <Text>16800</Text>
           </Row>
-
-        </Col>
-        <Col size={25}>
-          <Row style={styles.cell}>
-            <Text>Appli-cation Fees</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
-          <Row style={styles.cell}>
-            <Text>50</Text>
-          </Row>
         </Col>
 
-        <Col size={25}>
+
+      
+        <Col size={28}>
           <Row style={styles.cell}>
             <Text>Applica-tion</Text>
           </Row>
@@ -419,8 +356,15 @@ export default function App({navigation}) {
           <Row style={styles.cell}>
             <Text onPress={() =>navigation.navigate('Apply')}>apply</Text>
           </Row>
+          <Row style={styles.cell}>
+            <Text onPress={() =>navigation.navigate('Apply')}>apply</Text>
+          </Row>
+          
         </Col>
+
+
       </Grid>
+      
     </View>
   );
 }
@@ -431,19 +375,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     height: '100%',
     padding: 10,
-    paddingTop: 100,
-    paddingVertical:100,
     backgroundColor: "white",
-  },
-  cell: {
-    borderWidth: 1,
-    borderColor: "#ddd",
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    top:80,
-    height:200,
-    
   },
   tinyLogo: {
     position: 'absolute',
@@ -453,5 +385,20 @@ const styles = StyleSheet.create({
     top:50,
     left:160,
   },
-
+  box:{
+    top:50
+  },
+  cell: {
+    borderWidth: 1,
+    borderColor: "#ddd",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    top:80,
+    padding:1,
+  },
+  heading:{
+    fontWeight:"bold",
+    fontSize:20
+  },
 });

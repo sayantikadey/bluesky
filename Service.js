@@ -17,11 +17,23 @@ export default function Service({navigation}) {
 
 
     
-    <Button 
-      title="Ireland"
-      color="#0A3AE8"
-      onPress={() =>navigation.navigate('Ireland')}
-      />
+    <Text onPress={() =>navigation.navigate('Ireland')}
+     style={styles.Button1}>Ireland</Text>
+
+    <Text onPress={() =>navigation.navigate('Ireland')}
+     style={styles.Button2}>Canada</Text>
+
+    <Text onPress={() =>navigation.navigate('Ireland')}
+     style={styles.Button3}>Japan</Text>
+
+    <Text onPress={() =>navigation.navigate('Ireland')}
+     style={styles.Button4}>USA</Text>
+
+    <Text onPress={() =>navigation.navigate('Ireland')}
+     style={styles.Button5}>UK</Text>
+
+    <Text onPress={() =>navigation.navigate('Ireland')}
+     style={styles.Button6}>Australia</Text>
     </View>
   )
 }
@@ -45,12 +57,58 @@ const styles = StyleSheet.create({
   
   
  
-  Button:{
+  Button1:{
     borderRadius:8,
     paddingVertical:14,
     paddingHorizontal:10,
-    backgroundColor:'#f01d71'
+    backgroundColor:'#f01d71',
+    width:200,
+    textAlign:"center",
+    top:-50
   },
-  
-  
+  Button2:{
+    borderRadius:8,
+    paddingVertical:14,
+    paddingHorizontal:10,
+    backgroundColor:'#f01d71',
+    width:200,
+    textAlign:"center",
+    top:-10
+  },
+  Button3:{
+    borderRadius:8,
+    paddingVertical:14,
+    paddingHorizontal:10,
+    backgroundColor:'#f01d71',
+    width:200,
+    textAlign:"center",
+    top:30
+  },
+  Button4:{
+    borderRadius:8,
+    paddingVertical:14,
+    paddingHorizontal:10,
+    backgroundColor:'#f01d71',
+    width:200,
+    textAlign:"center",
+    top:60
+  },
+  Button5:{
+    borderRadius:8,
+    paddingVertical:14,
+    paddingHorizontal:10,
+    backgroundColor:'#f01d71',
+    width:200,
+    textAlign:"center",
+    top:100
+  },
+  Button6:{
+    borderRadius:8,
+    paddingVertical:14,
+    paddingHorizontal:10,
+    backgroundColor:'#f01d71',
+    width:200,
+    textAlign:"center",
+    top:130
+  },
 });
